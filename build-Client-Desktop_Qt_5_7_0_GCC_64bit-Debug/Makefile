@@ -184,6 +184,7 @@ DIST          = /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/spec_pre.prf 
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/qt_config.prf \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/spec_post.prf \
+		../Client/.qmake.stash \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/default_pre.prf \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/resolve_config.prf \
@@ -345,6 +346,7 @@ Makefile: ../Client/Client.pro /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/linux-g
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/qt_config.prf \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/default_pre.prf \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/resolve_config.prf \
@@ -498,6 +500,7 @@ Makefile: ../Client/Client.pro /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/linux-g
 /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/qt_config.prf:
 /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/default_pre.prf:
 /home/cristian/Qt5.7.0/5.7/gcc_64/mkspecs/features/resolve_config.prf:
@@ -794,7 +797,8 @@ main.o: ../Client/main.cpp ../Client/mainwindow.h \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qeventloop.h \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qguiapplication.h \
-		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qinputmethod.h
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Client/main.cpp
 
 mainwindow.o: ../Client/mainwindow.cpp ../Client/mainwindow.h \
@@ -898,7 +902,259 @@ mainwindow.o: ../Client/mainwindow.cpp ../Client/mainwindow.h \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtouchdevice.h \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qtabwidget.h \
 		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QVariant \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QAction \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qaction.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qactiongroup.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QApplication \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qapplication.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qeventloop.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qguiapplication.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qinputmethod.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QButtonGroup \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qbuttongroup.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qlayout.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QHeaderView \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qheaderview.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qabstractitemview.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qabstractscrollarea.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qframe.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qabstractitemmodel.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qitemselectionmodel.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qstyleoption.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qabstractspinbox.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qvalidator.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qregularexpression.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qslider.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qabstractslider.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qstyle.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qtabbar.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qrubberband.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QLabel \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qlabel.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QLineEdit \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qlineedit.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextcursor.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextformat.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpen.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextoption.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QMenuBar \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qmenubar.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qmenu.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QPushButton \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qpushbutton.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QStatusBar \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qstatusbar.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QToolBar \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qtoolbar.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QWidget \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QtCore \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QtCoreDepends \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qabstractanimation.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qanimationgroup.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qparallelanimationgroup.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qpauseanimation.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qpropertyanimation.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qvariantanimation.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qeasingcurve.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsequentialanimationgroup.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtextcodec.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qendian.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qlibraryinfo.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qdatetime.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qbuffer.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qdir.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfileinfo.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qdiriterator.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfileselector.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QObject \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QStringList \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfilesystemwatcher.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qlockfile.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qloggingcategory.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qprocess.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qresource.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsavefile.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsettings.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qstandardpaths.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qstorageinfo.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtemporarydir.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QScopedPointer \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtemporaryfile.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qabstractproxymodel.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qidentityproxymodel.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsortfilterproxymodel.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qstringlistmodel.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qjsonarray.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qjsonvalue.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qjsondocument.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qjsonobject.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qabstracteventdispatcher.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qabstractnativeeventfilter.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qbasictimer.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qmath.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qmetaobject.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qmimedata.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qobjectcleanuphandler.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qpointer.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsharedmemory.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsignalmapper.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsocketnotifier.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsystemsemaphore.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtimer.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtranslator.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qwineventnotifier.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qmimedatabase.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qmimetype.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfactoryinterface.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qlibrary.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qplugin.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qpluginloader.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/quuid.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qabstractstate.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qabstracttransition.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qeventtransition.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfinalstate.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qhistorystate.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsignaltransition.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qstate.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qstatemachine.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qexception.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfuture.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfutureinterface.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qrunnable.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qresultstore.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfuturesynchronizer.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qfuturewatcher.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qreadwritelock.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qsemaphore.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qthread.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qthreadpool.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qthreadstorage.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qwaitcondition.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qarraydataops.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qarraydatapointer.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qbitarray.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qbytearraymatcher.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qcache.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qcollator.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qcommandlineoption.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qcommandlineparser.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qcryptographichash.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qelapsedtimer.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qlinkedlist.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qmessageauthenticationcode.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qqueue.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qscopedvaluerollback.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qstack.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtextboundaryfinder.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtimeline.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtimezone.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qversionnumber.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qxmlstream.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qtcoreversion.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QtGui \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QtGuiDepends \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qaccessible.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qaccessiblebridge.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qaccessibleobject.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qaccessibleplugin.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qbitmap.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qiconengine.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qiconengineplugin.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qimageiohandler.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qimagereader.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qimagewriter.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qmovie.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpicture.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpictureformatplugin.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpixmapcache.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qstandarditemmodel.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qclipboard.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qdrag.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qgenericplugin.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qgenericpluginfactory.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qoffscreensurface.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qsurface.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qsurfaceformat.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglcontext.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QSurfaceFormat \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopengl.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/qt_windows.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopengles2ext.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglext.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglversionfunctions.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglwindow.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QPaintDeviceWindow \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpaintdevicewindow.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QWindow \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qwindow.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QEvent \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QMargins \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QRect \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QPaintDevice \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QOpenGLContext \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QImage \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qrasterwindow.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qscreen.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QList \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QSize \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QSizeF \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/QTransform \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qsessionmanager.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qstylehints.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qgenericmatrix.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qmatrix4x4.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qvector3d.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qvector4d.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qquaternion.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglbuffer.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopengldebug.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglextrafunctions.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglfunctions.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglframebufferobject.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglpaintdevice.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglpixeltransferoptions.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QSharedDataPointer \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglshaderprogram.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopengltexture.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopengltimerquery.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qopenglvertexarrayobject.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qbackingstore.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpagedpaintdevice.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpagelayout.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpagesize.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpaintengine.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpainter.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qpdfwriter.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qabstracttextdocumentlayout.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextlayout.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qglyphrun.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qrawfont.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qfontdatabase.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextdocument.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qstatictext.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qsyntaxhighlighter.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextobject.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextdocumentfragment.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextdocumentwriter.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtextlist.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtexttable.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qdesktopservices.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtGui/qtguiversion.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/QMessageBox \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qmessagebox.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtWidgets/qdialog.h \
+		/home/cristian/Qt5.7.0/5.7/gcc_64/include/QtCore/QDebug
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../Client/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
